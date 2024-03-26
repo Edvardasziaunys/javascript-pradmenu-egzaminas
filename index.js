@@ -1,1 +1,1 @@
-console.log("JS egazaminas start");
+console.log("JS egazaminas start, test change");
