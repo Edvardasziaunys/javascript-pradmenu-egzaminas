@@ -2,3 +2,45 @@
 html {
   font-family: "Montserrat", sans-serif;
 }
+body {
+  margin: 0%;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "content content content"
+    "content content content"
+    "footer footer footer";
+  margin: 0%;
+}
+.grid-item1 {
+  grid-area: header;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 148px;
+  padding-right: 148px;
+  background-color: #1c1c1c;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+nav {
+  word-spacing: 44px;
+}
+
+.grid-item2 {
+  grid-area: content;
+}
+
+.grid-item3 {
+  grid-area: footer;
+}
