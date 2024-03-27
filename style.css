@@ -149,6 +149,43 @@ form {
 .form-container-bottom {
 }
 
+.social-wrap {
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+}
+.social-left {
+  width: 35%;
+  height: 110px;
+}
+.social-left h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+.social-left p {
+  font-size: 14px;
+  color: #86878b;
+}
+
+.social-right {
+  width: 65%;
+
+  text-align: right;
+}
+.social a {
+  width: 10%;
+  height: 10%;
+  left: 0px;
+  top: 0px;
+  color: #e27866;
+  text-decoration: none;
+}
+
 .grid-item3 {
   grid-area: footer;
 }
