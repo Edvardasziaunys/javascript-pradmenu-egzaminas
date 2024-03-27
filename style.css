@@ -1,1 +1,4 @@
-/* CSS created */
+/* CSS created, SASS. prefix, kompresuoti nuotraukas nereikia */
+html {
+  font-family: "Montserrat", sans-serif;
+}
