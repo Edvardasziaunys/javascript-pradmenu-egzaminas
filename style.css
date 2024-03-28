@@ -186,6 +186,77 @@ form {
   text-decoration: none;
 }
 
+.tab-section {
+  top: 816px;
+  left: 0px;
+  width: auto;
+  height: 595px;
+  background: transparent linear-gradient(270deg, #6696e2 0%, #e27866 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 0.42;
+  background-image: url("./christoffer-engstrom-503481-unsplash.png");
+}
+.wrap-tab {
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+}
+.tab-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-top: 30px;
+  text-align: left;
+  width: 20%;
+}
+.tab-section-left button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin-top: 20px;
+}
+.tab-section-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+  text-align: left;
+  width: 45%;
+}
+.tab-paragraph {
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.tab-section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-top: 30px;
+  text-align: left;
+  width: 35%;
+}
+.tab-top-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tab-top-photo img {
+  width: 168px;
+  height: 168px;
+  opacity: 1;
+}
+.tab-bottom-photo img {
+  width: 365px;
+  height: 177px;
+  opacity: 1;
+}
+
 .grid-item3 {
   grid-area: footer;
 }
