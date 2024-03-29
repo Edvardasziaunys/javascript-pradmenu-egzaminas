@@ -395,6 +395,30 @@ form {
   border-radius: 50px;
   margin: auto;
 }
+.pricing-section {
+  width: auto;
+  height: 883px;
+  background-color: #6696e2;
+}
+.pricing-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.pricing-top {
+  padding-top: 50px;
+}
+.pricing-top h2 {
+  color: #ffffff;
+  font-size: 36px;
+}
+.pricing-top p {
+  color: #ffffff;
+  font-size: 14px;
+}
 .grid-item3 {
   grid-area: footer;
 }
