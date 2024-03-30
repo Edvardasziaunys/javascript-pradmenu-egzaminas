@@ -544,6 +544,7 @@ form {
 .contact-wrap h2 {
   font-size: 36px;
   color: #ffffff;
+  font-weight: 600;
 }
 .contact-wrap p {
   font-size: 14px;
@@ -589,4 +590,40 @@ form {
 }
 .grid-item3 {
   grid-area: footer;
+}
+.footer-section {
+  background-color: #1c1c1c;
+  height: 124px;
+  width: auto;
+}
+.footer-wrap {
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+.footer-social a {
+  width: 10%;
+  height: 10%;
+  left: 0px;
+  top: 0px;
+  color: #e27866;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer-left {
+  width: 50%;
+}
+.footer-right {
+  width: 50%;
+  text-align: right;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 0.5;
 }
