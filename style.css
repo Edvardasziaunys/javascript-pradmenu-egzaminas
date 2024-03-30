@@ -1,6 +1,7 @@
 /* CSS created, SASS. prefix, kompresuoti nuotraukas nereikia */
 html {
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0%;
@@ -37,6 +38,12 @@ nav a {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
+}
+nav a.active {
+  background-color: #e27866;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 10px;
 }
 nav {
   word-spacing: 44px;
