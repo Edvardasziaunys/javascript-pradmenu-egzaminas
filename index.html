@@ -127,35 +127,128 @@
         <section id="features" class="tab-section">
           <div class="wrap-tab">
             <div class="tab-section-left">
-              <button onclick="myFunction()">Register</button>
-              <button onclick="myFunction()">Apply</button>
-              <button onclick="myFunction()">Receive</button>
+              <button
+                onclick="toggleTab(1)"
+                id="tabButton1"
+                class="tab-button active"
+              >
+                <span>REGISTER</span>
+              </button>
+              <button onclick="toggleTab(2)" id="tabButton2" class="tab-button">
+                <span>APPLY</span>
+              </button>
+              <button onclick="toggleTab(3)" id="tabButton3" class="tab-button">
+                <span>RECEIVE</span>
+              </button>
             </div>
-            <div class="tab-section-middle">
-              <h1 class="titles">
-                Tabs with soft transitioning effect. Explained propriety of out
-                perpetual his you.
-              </h1>
-              <p class="tab-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                accumsan et viverra justo commodo. Proin sodales pulvinar
-                tempor. Cum sociis natoque penatibus et magnis dis parturient
-                montes. <br />
-                ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                euismod bibendum laoreet.
-              </p>
-            </div>
-            <div class="tab-section-right">
-              <div class="tab-top-photo">
-                <img src="./photo-1493409137604-0901c55e4456.png" alt="green" />
+            <!-- Tab 1 ------------------------------------------------------------ -->
+            <div id="changing-tabs-1" class="changing-tab">
+              <div class="tab-section-middle">
+                <h1 class="titles">
+                  Tabs with soft transitioning effect. Explained propriety of
+                  out perpetual his you.
+                </h1>
+                <p class="tab-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus accumsan et viverra justo commodo. Proin sodales
+                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes. <br />
+                  ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                  euismod bibendum laoreet.
+                </p>
+              </div>
+              <div class="tab-section-right">
+                <div class="tab-top-photo">
+                  <img
+                    src="./photo-1493409137604-0901c55e4456.png"
+                    alt="green"
+                  />
 
-                <img src="./photo-1543364195-bfe6e4932397.png" alt="salad" />
-              </div>
-              <div class="tab-bottom-photo">
-                <img src="./photo-1448387473223-5c37445527e7.png" alt="surf" />
+                  <img src="./photo-1543364195-bfe6e4932397.png" alt="salad" />
+                </div>
+                <div class="tab-bottom-photo">
+                  <img
+                    src="./photo-1448387473223-5c37445527e7.png"
+                    alt="surf"
+                  />
+                </div>
               </div>
             </div>
+
+            <!-- Tab 2 ------------------------------------------------------------ -->
+            <div
+              id="changing-tabs-2"
+              class="changing-tab"
+              style="display: none"
+            >
+              <div class="tab-section-middle">
+                <h1 class="titles">
+                  Apply for our services to get the best pricing details you
+                  could find in the market.
+                </h1>
+                <p class="tab-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. <br />
+                  ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                  euismod bibendum laoreet.
+                </p>
+              </div>
+              <div class="tab-section-right">
+                <div class="tab-top-photo">
+                  <img
+                    src="./photo-1493409137604-0901c55e4456.png"
+                    alt="green"
+                  />
+
+                  <img src="./photo-1543364195-bfe6e4932397.png" alt="salad" />
+                </div>
+                <div class="tab-bottom-photo">
+                  <img
+                    src="./photo-1448387473223-5c37445527e7.png"
+                    alt="surf"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3 ------------------------------------------------------------ -->
+            <div
+              id="changing-tabs-3"
+              class="changing-tab"
+              style="display: none"
+            >
+              <div class="tab-section-middle">
+                <h1 class="titles">
+                  Receive all the best functions you could desire, with our new
+                  products.
+                </h1>
+                <p class="tab-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus accumsan et viverra justo commodo. Proin sodales
+                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes.
+                </p>
+              </div>
+              <div class="tab-section-right">
+                <div class="tab-top-photo">
+                  <img
+                    src="./photo-1493409137604-0901c55e4456.png"
+                    alt="green"
+                  />
+
+                  <img src="./photo-1543364195-bfe6e4932397.png" alt="salad" />
+                </div>
+                <div class="tab-bottom-photo">
+                  <img
+                    src="./photo-1448387473223-5c37445527e7.png"
+                    alt="surf"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- tab end ----------------------------------------------------------------------------------------- -->
           </div>
         </section>
         <section id="about" class="black-section">
