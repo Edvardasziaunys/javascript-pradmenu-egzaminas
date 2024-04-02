@@ -801,6 +801,7 @@ form {
   }
   .wrap-hero {
     flex-direction: column;
+    padding: 0;
   }
   .hero-left {
     text-align: center;
@@ -862,5 +863,35 @@ form {
   }
   .titles {
     font-size: 30px;
+  }
+  .black-wrap img {
+    display: block;
+    width: 90%;
+    height: auto;
+  }
+  .black-wrap {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .orange-sphere {
+    height: 30px;
+  }
+  .pricing-wrap {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .pricing-bottom {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .pricing-features {
+    font-size: 13px;
+  }
+  .what-wrap {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .name {
+    font-size: 18px;
   }
 }
