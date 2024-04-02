@@ -119,3 +119,34 @@ reviewsData.forEach((review) => {
   );
   reviewContainer.appendChild(card);
 });
+
+//---------pagination
+const itemsPerPage = 3;
+let currentPage = 1;
+//------------------------
+
+// form validation
+
+document.addEventListener("DOMContentLoaded", function () {
+  const submitButtons = document.querySelectorAll("input[type='submit']");
+
+  submitButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      const form = button.closest("form");
+      const inputs = form.querySelectorAll("input[required]");
+      let isEmpty = false;
+
+      inputs.forEach(function (input) {
+        if (input.value.trim() === "") {
+          isEmpty = true;
+        }
+      });
+
+      if (isEmpty) {
+        event.preventDefault();
+        alert("Please fill in all the required fields");
+        return false;
+      }
+    });
+  });
+});
