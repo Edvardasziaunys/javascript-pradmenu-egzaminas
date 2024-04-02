@@ -44,3 +44,78 @@ function toggleTab(tabNumber) {
     clickedButton.classList.add("active");
   }
 }
+
+//  Review cards
+
+function createReviewCard(comment, name, occupation, photoUrl) {
+  const card = document.createElement("div");
+  card.classList.add("review-card");
+
+  const commentBubble = document.createElement("div");
+  commentBubble.classList.add("comment-bubble");
+  commentBubble.textContent = comment;
+
+  const contentWrap = document.createElement("div");
+  contentWrap.classList.add("content-wrap");
+
+  const photo = document.createElement("img");
+  photo.classList.add("photo");
+  photo.src = photoUrl;
+
+  const infoWrap = document.createElement("div");
+  infoWrap.classList.add("info-wrap");
+
+  const nameElement = document.createElement("div");
+  nameElement.classList.add("name");
+  nameElement.textContent = name;
+
+  const occupationElement = document.createElement("div");
+  occupationElement.classList.add("occupation");
+  occupationElement.textContent = occupation;
+
+  infoWrap.appendChild(nameElement);
+  infoWrap.appendChild(occupationElement);
+
+  contentWrap.appendChild(photo);
+  contentWrap.appendChild(infoWrap);
+
+  card.appendChild(commentBubble);
+  card.appendChild(contentWrap);
+
+  return card;
+}
+
+const reviewsData = [
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "Jeremy H.",
+    occupation: "Manager",
+    photoUrl: "./avatar_2_u231.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.",
+    name: "John S.",
+    occupation: "Freelance",
+    photoUrl: "./avatar_2_u231.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "Susan W.",
+    occupation: "Photographer",
+    photoUrl: "./avatar_2_u231.png",
+  },
+];
+
+const reviewContainer = document.querySelector(".what-bottom");
+reviewsData.forEach((review) => {
+  const card = createReviewCard(
+    review.comment,
+    review.name,
+    review.occupation,
+    review.photoUrl
+  );
+  reviewContainer.appendChild(card);
+});
