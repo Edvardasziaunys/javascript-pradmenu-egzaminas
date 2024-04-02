@@ -795,4 +795,72 @@ form {
     right: 0;
     display: flex;
   }
+  .hero {
+    height: 800px;
+    padding-bottom: 100px;
+  }
+  .wrap-hero {
+    flex-direction: column;
+  }
+  .hero-left {
+    text-align: center;
+  }
+  .hero-logo {
+    display: none;
+  }
+  .download-button {
+    display: none;
+  }
+  .hero-right {
+    width: 80%;
+  }
+  .social-wrap {
+    height: 150px;
+  }
+  .social-left {
+    width: 50%;
+  }
+  .social-right {
+    width: 50%;
+  }
+  .social-left h3 {
+    margin-bottom: 0;
+  }
+  .wrap-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 650px;
+  }
+  .tab-section {
+    height: 800px;
+  }
+  .tab-section-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+  }
+  .tab-section-middle {
+    width: 50%;
+  }
+  .tab-section-right {
+    width: 50%;
+  }
+  .changing-tab {
+    display: flex;
+    flex-direction: column;
+  }
+  #changing-tabs-1 {
+    width: 100%;
+  }
+  #changing-tabs-2 {
+    width: 100%;
+  }
+  #changing-tabs-3 {
+    width: 100%;
+  }
+  .titles {
+    font-size: 30px;
+  }
 }
