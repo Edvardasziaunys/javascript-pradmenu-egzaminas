@@ -107,22 +107,127 @@ const reviewsData = [
     occupation: "Photographer",
     photoUrl: "./avatar_2_u231.png",
   },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "JJ Olatunji",
+    occupation: "Influencer",
+    photoUrl: "./avatar_2_u231.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "Ashley W.",
+    occupation: "Stylist",
+    photoUrl: "./avatar_2_u231.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, . Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "John W.",
+    occupation: "Broker",
+    photoUrl: "./avatar_2_u231.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "Susan W.",
+    occupation: "Customer Support",
+    photoUrl: "./avatar_2_u231.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "Andy P.",
+    occupation: "Photographer",
+    photoUrl: "./avatar_2_u231.png",
+  },
+  {
+    comment:
+      "Lorem ipsum, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "Mark N.",
+    occupation: "Freelance",
+    photoUrl: "./avatar_2_u231.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "Susan W.",
+    occupation: "Photographer",
+    photoUrl: "./avatar_2_u231.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, oribus accusamus expedita repellat similique odio aspernatur ex.",
+    name: "Jil W.",
+    occupation: "Customer Success",
+    photoUrl: "./avatar_2_u231.png",
+  },
 ];
 
-const reviewContainer = document.querySelector(".what-bottom");
-reviewsData.forEach((review) => {
-  const card = createReviewCard(
-    review.comment,
-    review.name,
-    review.occupation,
-    review.photoUrl
-  );
-  reviewContainer.appendChild(card);
-});
+// const reviewContainer = document.querySelector(".what-bottom");
+// reviewsData.forEach((review) => {
+//   const card = createReviewCard(
+//     review.comment,
+//     review.name,
+//     review.occupation,
+//     review.photoUrl
+//   );
+//   reviewContainer.appendChild(card);
+// });
 
 //---------pagination
+
 const itemsPerPage = 3;
 let currentPage = 1;
+
+function displayReviews(page) {
+  const startIndex = (page - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const reviewsOnPage = reviewsData.slice(startIndex, endIndex);
+
+  const reviewContainer = document.querySelector(".what-bottom");
+  reviewContainer.innerHTML = "";
+
+  reviewsOnPage.forEach((review) => {
+    const card = createReviewCard(
+      review.comment,
+      review.name,
+      review.occupation,
+      review.photoUrl
+    );
+    reviewContainer.appendChild(card);
+  });
+}
+
+function updatePagination() {
+  const totalItems = reviewsData.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const paginationContainer = document.querySelector(".pagination");
+  paginationContainer.innerHTML = "";
+
+  for (let p = 1; p <= totalPages; p++) {
+    const pageLink = document.createElement("a");
+    pageLink.href = "#";
+    pageLink.textContent = p;
+    pageLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      currentPage = p;
+      displayReviews(currentPage);
+      updatePagination();
+    });
+
+    if (p === currentPage) {
+      pageLink.classList.add("active");
+    }
+    paginationContainer.appendChild(pageLink);
+  }
+}
+
+displayReviews(currentPage);
+updatePagination();
+
 //------------------------
 
 // form validation

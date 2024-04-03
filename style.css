@@ -665,6 +665,31 @@ form {
   color: #86878b;
   font-size: 14px;
 }
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border: 1px solid#E27866;
+  color: #ffffff00;
+  text-decoration: none;
+}
+.pagination a:hover {
+  background-color: #e27866;
+}
+.pagination a.active {
+  background-color: #e27866;
+}
 .contact {
   background-color: #e27866;
   height: 573px;
